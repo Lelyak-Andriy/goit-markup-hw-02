@@ -1,19 +1,40 @@
-body {
-  background-color: #e5e5e5;
-  color: #212121;
-  font-family: Roboto;
+:root {
+  --primary-text-color: #757575;
+  --primary-bgc: #ffffff;
+  --secondary-text-button-color: #ffffff;
+  --secondary-bgc: #f5f4fa;
+  --title-color: #212121;
+  --accent-color: #2196f3;
+  --footer-bcg: #2f303a;
 }
 
-/* колір основного тексту #212121 */
-/* колір додаткового тексту #757575 */
-/* білий #FFFFFF */
+/* колір основного тексту #757575  */
+/* колір заголовків #212121 */
+/* білий  #FFFFFF */
 /* акцент #2196F3 */
-/* колір фону #E5E5E5 */
+#2F303A
+/* колір фону #FFFFFF */
 /* додатковий колір фону #F5F4FA */
+/* фон футера  */
+/* Roboto 400/500/700/900 головний шрифт */
+/* Raleway 700 додатковий шрифт */
 
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bgc);
+  font-family: "Roboto", "Arial", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+/* Portfolio */
+/* Хедер */
 /* Логотип */
 .logo {
-  color: #212121;
+  color: var(--title-color);
+}
+.logo-blue {
+  color: var(--accent-color);
 }
 /* Видаляємо крапки в списках */
 .list {
@@ -21,18 +42,106 @@ body {
 }
 /* Навігація по сайту */
 .site-nav .link {
-  color: #212121;
+  color: var(--title-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
-
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 /* Контакти */
 .contact .contct-link {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .contact .contct-link:hover,
 .contact .contct-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+/* Основна секція */
+/* Список робіт */
+.work-title {
+  color: var(--title-color);
+}
+/* Фільтр кнопок */
+.pointer {
+  cursor: pointer;
+}
+.button {
+  color: var(--title-color);
+  background-color: var(--secondary-bgc);
+}
+.primary-button:hover,
+.primary-button:focus {
+  color: var(--secondary-text-button-color);
+  background-color: var(--accent-color);
+}
+.work-item {
+  color: var(--primary-text-color);
+}
+
+/* Футер */
+.footer {
+  background: var(--footer-bcg);
+}
+/* Логотип */
+.logo {
+  color: var(--title-color);
+}
+.logo-blue {
+  color: var(--accent-color);
+}
+.logo-white {
+  color: #ffffff;
+}
+.address-item {
+  color: #ffffff;
+}
+.footer-contct-link {
+  color: var(--primary-text-color);
+}
+.footer-contct-link:hover,
+.footer-contct-link:focus {
+  color: var(--accent-color);
+}
+
+/* Webstudio */
+/* HERO */
+.section-hero {
+  background-color: var(--footer-bcg);
+}
+.section-title {
+  color: #ffffff;
+}
+/* Кнопка */
+.service {
+  color: #ffffff;
+  background: var(--accent-color);
+}
+/* Якості  */
+.quality-item {
+  color: var(--title-color);
+}
+
+.quality-text {
+  color: var(--primary-text-color);
+}
+/* Зайняття */
+.activities-title {
+  color: var(--title-color);
+}
+/* Команда */
+.team {
+  background-color: var(--secondary-bgc);
+}
+.team-title {
+  color: var(--title-color);
+}
+.team-item {
+  color: var(--title-color);
+}
+.profession {
+  color: var(--primary-text-color);
 }
