@@ -15,7 +15,7 @@
 #2F303A
 /* колір фону #FFFFFF */
 /* додатковий колір фону #F5F4FA */
-/* фон футера  */
+/* фон футера #2f303a */
 /* Roboto 400/500/700/900 головний шрифт */
 /* Raleway 700 додатковий шрифт */
 
@@ -27,22 +27,39 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
+/* Видаляємо крапки в списках */
+.list {
+  list-style: none;
+}
+/* Прибираємо підкреслення в посиланнях */
+.link {
+  text-decoration: none;
+}
+
 /* Portfolio */
 /* Хедер */
 /* Логотип */
 .logo {
   color: var(--title-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
 }
+
 .logo-blue {
   color: var(--accent-color);
 }
-/* Видаляємо крапки в списках */
-.list {
-  list-style: none;
-}
+
 /* Навігація по сайту */
 .site-nav .link {
   color: var(--title-color);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -54,6 +71,12 @@ body {
 /* Контакти */
 .contact .contct-link {
   color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contact .contct-link:hover,
 .contact .contct-link:focus {
@@ -101,6 +124,7 @@ body {
 }
 .footer-contct-link {
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 .footer-contct-link:hover,
 .footer-contct-link:focus {
@@ -114,19 +138,41 @@ body {
 }
 .section-title {
   color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 /* Кнопка */
 .service {
   color: #ffffff;
   background: var(--accent-color);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
 }
 /* Якості  */
 .quality-item {
   color: var(--title-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .quality-text {
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 /* Зайняття */
 .activities-title {
